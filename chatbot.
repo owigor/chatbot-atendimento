@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    // Variável que guardará a escolha do usuário
+    int opcao;
+
+    // ========== INTRODUÇÃO ==========
+    printf("=========================================\n");
+    printf("     CHATBOT DE ATENDIMENTO AO CLIENTE\n");
+    printf("=========================================\n");
+    printf("Este sistema foi criado para simular\n");
+    printf("um atendimento virtual, permitindo que\n");
+    printf("voce escolha entre os setores Suporte,\n");
+    printf("Financeiro, Comercial ou falar com um\n");
+    printf("atendente humano.\n");
+    printf("\nOla! Seja bem-vindo(a)! Estou aqui para ajudar.\n");
+    printf("=========================================\n\n");
+
+    // ========== MENU COM LAÇO DE REPETIÇÃO ==========
+    do {
+        printf("\n=========== MENU PRINCIPAL ===========\n");
+        printf("1 - Suporte\n");
+        printf("2 - Financeiro\n");
+        printf("3 - Comercial\n");
+        printf("4 - Falar com atendente\n");
+        printf("0 - Sair\n");
+        printf("======================================\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        // O processamento das opções será feito na próxima etapa
+
+    } while(opcao != 0);
+
+    // ========== ENCERRAMENTO ==========
+    printf("\nObrigado por usar nosso chatbot!\n");
+    printf("Ate a proxima!\n");
+
+    return 0;
+}
